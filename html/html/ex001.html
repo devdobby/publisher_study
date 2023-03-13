@@ -1,0 +1,78 @@
+<!-- 
+    * DOCTYPE
+        ** HTML 문서에서 <html> 태그를 선언하기 전에 가장 먼저 선언
+        ** HTML5 에서는 SGML 을 기반으로 하지 않기 때문에 DTD 를 참조할 필요가 없음
+        ** git 테스트용 수정
+ -->
+<!DOCTYPE html>
+
+<!-- 
+    * HTML
+        ** HTML 문서의 루트 요소를 정의할 때 사용
+        ** DOCTYPE 선언을 제외한 모든 다른 HTML 요소를 포함하기 위한 컨테이너
+        ** 브라우저에게 해당 문서가 HTML 문서임을 알려주는 역할
+ -->
+<html lang="ko">
+
+<!-- 
+    * head 태그
+        ** 해당 문서에 대한 정보인 메타데이터의 집합을 정의할 때 사용
+ -->
+<head>
+    <!-- <head> 태그에 포함되는 요소 -->
+
+    <!--
+        * meta
+            ** 메타데이터. 페이지 표시 X. 분석용
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        * title
+            ** 브라우저 툴바, 문서의 제목 정의
+            ** 즐겨찾기 할 때 페이지 제목
+            ** 검색엔진 결과에서 페이지 제목
+    -->
+    <title>Document</title>
+
+    <!-- 
+        * style
+            ** HTML 문서에 대한 스타일 정보를 정의하는 데 사용(렌더링 방법 지정)
+     -->
+    <style>
+        h1 {
+            color : blue;
+        }
+    </style>
+
+    <!-- 
+        * link
+            ** 현재 문서와 외부 자원 사이의 관계 정의.(대부분 외부 스타일시트 가져올 때 씀)
+     -->
+    <link rel="stylesheet" href="../css/ex01.css">
+
+    <!-- 
+        * script
+            ** 스크립트 정의에 사용.(주로 JS)
+            ** inline 으로 쓸 수도 있고, outer 로도 쓸 수도 있음
+     -->
+    <script>
+        alert('this is inline test');
+    </script>
+    <script src="../js/ex01.js"></script>
+
+    <!--
+        * 기타 태그
+            ** base
+                - 페이지의 모든 상대적인 URL 에 대한 기본 URL 대상을 지정
+            ** noscript
+                - 클라이언트 사이드 스크립트를 사용하지 않도록 설정하거나, 스크립트를 지원하지 않는 브라우저를 위한 별도의 콘텐츠를 정의할 때 사용
+    -->
+</head>
+<body>
+    <h1>This is h1 Test.</h1>
+    <h2>This is h2 Test.</h2>
+</body>
+</html>

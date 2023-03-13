@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 같은 클래스 선택자를 지닌다고 해도, [태그].[클래스선택자명] 형태로 선택하면, 그 태그에만 스타일 지정됨 */
+        h2.bluetext{
+            color:blue;
+        }
+        .redtext{
+            color:red;
+        }
+        p{
+            font-size:15px;
+            margin-left: 20px;  /* p태그를 기준으로 왼쪽 바깥 여백을 20px 로 지정 */
+        }
+    </style>
+</head>
+<body>
+    <h1>블루베리에 관한 연구</h1>
+    <h2 class="bluetext">블루베리의 항산화 효능</h2>
+    <p class="bluetext">Lorem <span class="redtext">ipsum</span>, dolor sit amet consectetur adipisicing elit. Non ad alias totam eveniet qui. Architecto distinctio vero perspiciatis inventore eligendi repellendus eaque maiores dolores. Aliquid fugiat mollitia cupiditate ratione provident!</p>
+    <p>Lorem <span class="redtext">ipsum</span> dolor sit amet consectetur adipisicing elit. Eveniet amet mollitia obcaecati consequatur laudantium fugit molestias perferendis voluptate, nostrum blanditiis assumenda facilis eum! Dicta, nisi dolorum. Dolore eaque minima omnis.</p>
+
+    <h2>블루베리의 노화</h2>
+    <p><span class="redtext">ipsum</span> dolor sit amet consectetur adipisicing elit. Voluptatem, asperiores facilis reprehenderit non iure laudantium. Blanditiis laboriosam iste consectetur ut expedita quisquam laudantium sint debitis. Ad officiis ducimus blanditiis consectetur.</p>
+</body>
+</html>

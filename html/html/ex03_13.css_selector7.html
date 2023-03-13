@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하위선택자</title>
+    <!-- 3_12 에서 이어짐 -->
+    <style>
+        /* '상위요소 > 하위요소'. 원하는 하위 요소에게만 스타일을 적용할 수 있음 */
+        #container > ul{
+            border : 1px dotted red;
+        }
+        #container > p{
+            color: blue;
+        }
+        #container > ul > li > ul {
+            color:violet;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <header><h1>예약 방법 및 요금</h1></header>
+        <p>객실 예약</p>
+        <ul>
+            <li>예약 방법
+                <ul>
+                    <li>전화 : 000-0000-0000</li>
+                    <li>문자 : 000-0000-0000</li>
+                </ul>
+            </li>
+            <li>상세 요금
+                <ul>
+                    <li>1인실 : 0만원</li>
+                    <li>2인실 : 0만원</li>
+                    <li>3인실 : 0만원</li>
+                    <li>4인실 : 0만원</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

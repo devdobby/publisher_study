@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style-type:none;
+        }
+        a{
+            text-decoration: none;
+            border: 1px solid red;
+        }
+        /* a 태그 중, 속성이 target 인 것 중, 속성값이 "_blank" 인 것만 */
+        a[target="_blank"]{
+            padding-right:30px;
+            background-image:url("https://britg.kr/wp-content/uploads/2019/04/%ED%8E%AD%EA%B7%84%EC%9D%98%EB%82%A0-400x400.png");
+            /* 로컬 상대경로로 넣어줘야 하는건가? */
+        }
+    </style>
+</head>
+<body>
+    <h1>포털 사이트 종류</h1>
+    <ul>
+        <li><a href="http://www.naver.com" target="_blank">네이버</a></li>
+        <li><a href="http://www.google.com">구글</a></li>
+        <li><a href="http://www.daum.net" target="">다음</a></li>
+    </ul>
+</body>
+</html>

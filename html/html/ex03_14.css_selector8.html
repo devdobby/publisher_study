@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형제 선택자</title>
+    <!-- 3_13 에서 이어짐 -->
+    <style>
+        /* 
+            '+' : 인접형제 선택자
+            'h1 + p'. h1을 기준으로 같은 형제(레벨)이면서, 같은 부모를 가지며, 바로 다음에 인접해있을 경우
+        */
+        h1 + p {
+            color: blue;
+        }
+        /*
+            '~'(틸드) : 형제 선택자
+            'h1 ~ ul'. h1을 기준으로 같은 형제(레벨)이면서, 같은 부모를 가지며, 해당 범위 내에 있는 형제 요소들 전부
+        */
+        h1 ~ ul{
+            color: violet;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <h1>예약 방법 및 요금</h1>
+        <p>객실 예약</p>
+        <ul>
+            <li>전화 : 000-0000-0000</li>
+            <li>문자 : 000-0000-0000</li>
+        </ul>
+        <ul>
+            <li>1인실 : 0만원</li>
+            <li>2인실 : 0만원</li>
+            <li>3인실 : 0만원</li>
+            <li>4인실 : 0만원</li>    
+        </ul>
+        <p>끝!</p>
+    </section>
+</body>
+</html>

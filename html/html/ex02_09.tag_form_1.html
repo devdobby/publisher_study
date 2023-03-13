@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식과 form 구조</title>
+</head>
+<body>
+    <!-- 
+        action attribute: 이동할 페이지를 지정
+        method : get or post
+     -->
+    <form class="form_test" action="" method="post">
+        <!-- name : 페이지가 이동할 때, 이동하는 페이지에서 참조하는 값 -->
+        이름 : <input type="text" name="text" value=""><br>
+        아이디 : <input type="text" name="id" value=""><br>
+        패스워드 : <input type="text" name="password" value=""><br>
+        <!-- radio 에서 name 은 공통된 것 중 하나만 선택가능토록 함 -->
+        성별 남<input type="radio" name="gender" id="" value="m"> 여<input type="radio" name="gender" id="" value="f"><br>
+        취미 독서<input type="checkbox" name="hobby" id="" value="book"> 운동<input type="checkbox" name="hobby" id="" value="sports"> 코딩<input type="checkbox" name="hobby" id="" value="coding"><br>
+        파일첨부<input type="file" name="file" value="사진"><br>
+        <input type="hidden" name="hidden" value="12:10"><br>
+        <input type="button" value="버튼"> <input type="reset" value="리셋"> <input type="submit" value="전송">
+    </form>
+</body>
+</html>

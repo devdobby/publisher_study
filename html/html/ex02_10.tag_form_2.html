@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식과 form 구조</title>
+</head>
+<body>
+    <!-- tag_form_1 에서 변경됨 -->
+    <!-- 
+        action attribute: 이동할 페이지를 지정
+        method : get or post
+     -->
+    <form class="form_test" action="" method="post">
+        <table>
+            <tr>
+                <!--
+                    <label> 태그에서, for 속성에 지정한 값을
+                    <input> 태그에 id 속성과 동일하게 해주면
+                    같은 영역을 바라봄.
+                -->
+                <td><label for="username">이름</label></td>
+                <td><input type="text" id="username" name="username" value=""><br></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td><label for="male">남</label><input type="radio" name="gender" id="male" value="m"><label for="female">여</label><input type="radio" name="gender" id="female" value="m"></td>
+            </tr>
+        </table>
+        <input type="submit" value="가입">
+    </form>
+</body>
+</html>

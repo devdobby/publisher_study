@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type:none;
+        }
+        li{
+            width:150px;
+            display:inline;
+            float:left;
+            margin:10px;
+        }
+        a{
+            padding:5px 20px;
+            font-size:14px;
+            color:blue;
+            text-decoration: none;
+        }
+        /* 속성선택자를 지정하기 위해서는 대괄호를 사용해야 한다 */
+        /* a 태그에서, href 속성이 있는 곳만 배경색을 yellow 로 적용 */
+        a[href]{
+            background-color:yellow;
+        }
+        a[href=test]{
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인메뉴 :</a></li>
+        <li><a href="#">떡볶이</a></li>
+        <li><a href="#">비빔밥</a></li>
+        <li><a href="#">제육덮밥</a></li>
+        <li><a href="test">제육덮밥</a></li>
+    </ul>
+</body>
+</html>

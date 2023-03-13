@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어</title>
+</head>
+<body>
+    <!--
+        브라우저가 mp3를 지원하지 않는다면,
+        source 태그를 사용해서 여러 개의 파일을 나열한다.
+    -->
+    <audio autoplay controls>
+        <source src="media/kalimba.mp3" type="audio/mp3">
+        <source src="media/kalimba.ogg" type="audio/ogg">
+    </audio>
+
+    <video controls width="640" height="300" poster="https://britg.kr/wp-content/uploads/2019/04/%ED%8E%AD%EA%B7%84%EC%9D%98%EB%82%A0-400x400.png">
+        <source src="media/wild.mp4" type="video/mp4">
+        <source src="media/wild.webm" type="video/webm">
+    </video>
+    
+</body>
+</html>

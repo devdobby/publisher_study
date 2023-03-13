@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type:none;
+        }
+        li{
+            display:inline;
+            float:left;
+            margin:10px;
+        }
+        li a{
+            padding: 5px 20px;
+            font-size: 14px;
+            color:blue;
+            text-decoration:none;
+        }
+        /* '|' 는 파이프라고 함 */
+        /* |= 선택자는 특정 값이 포함된 속성값의 스타일에 적용 */
+        a[title|="us"]{
+            background-color:yellow;
+        }
+        /* '^' 는 캐럿이라고 함 */
+        /* ^= 선택자는 특정 값으로 시작되는 속성값의 스타일에 적용 */
+        a[title^="jap"]{
+            background-color:green;
+        }
+        a[title^="chin"]{
+            background-color:red;
+        }
+        /* $= 선택자는 특정 값으로 끝나는 속성값의 스타일에 적용 */
+        a[title$="rea"]{
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>외국어 서비스 :</li>
+        <li><a href="#" title="us">영어</a></li>
+        <li><a href="#" title="us-eng">영어</a></li>
+        <li><a href="#" title="japanese">일본어</a></li>
+        <li><a href="#" title="chinese">중국어</a></li>
+        <li><a href="#" title="korea">한국어</a></li>
+    </ul>
+</body>
+</html>

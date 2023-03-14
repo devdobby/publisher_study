@@ -5,9 +5,14 @@ img{
     height:200px;
     border: 2px solid yellow;
 }
+.bbb{
+    
+}
 h1{
     width:300px;;
-    border-bottom-style: dotted;
+    border-bottom-style: dotted;;;;;
+    ;;;
+    ;;;
 }
 ul{
     color:blue; /* 목록의 글자색을 파란색으로 변경 */
